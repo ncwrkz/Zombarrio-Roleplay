@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zombarrio Roleplay — Join</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Zombarrio Roleplay Logo">
+        <div>
+          <div class="brand-title" data-server-name>Zombarrio Roleplay</div>
+          <div class="brand-sub" data-server-tagline>FiveM Zombie Roleplay Server</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="rules.html">Rules</a>
+        <a href="join.html">Join</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-outline" data-discord href="#" target="_blank" rel="noopener">Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <section class="card card-pad">
+      <h1 class="h1" style="font-size:38px">Join the Server</h1>
+      <p class="p">Use CFX connect or direct IP. Replace the placeholders in <code>app.js</code>.</p>
+
+      <div class="grid3">
+        <div class="feature">
+          <h3>CFX Connect</h3>
+          <p>Fastest way to join.</p>
+          <a class="btn btn-primary" data-connect href="#" target="_blank" rel="noopener">Connect via CFX</a>
+        </div>
+        <div class="feature">
+          <h3>Server IP</h3>
+          <p class="small">Copy and paste in FiveM console:</p>
+          <div class="card" style="padding:12px;border-radius:16px;background:rgba(0,0,0,.22);border:1px solid var(--line)">
+            <code data-server-ip>connect your.server.ip:30120</code>
+          </div>
+          <div style="height:10px"></div>
+          <button class="btn" data-copy-ip type="button">Copy Server IP</button>
+        </div>
+        <div class="feature">
+          <h3>Discord</h3>
+          <p>Announcements, whitelist, rules, and support.</p>
+          <a class="btn btn-outline" data-discord href="#" target="_blank" rel="noopener">Join Discord</a>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+
+      <h2 style="margin:0 0 8px">Requirements</h2>
+      <ul class="small">
+        <li>FiveM installed</li>
+        <li>Read and follow the rules</li>
+        <li>Microphone recommended for RP</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div class="small">Having trouble joining? Open a ticket on the Support page.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

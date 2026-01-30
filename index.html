@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zombarrio Roleplay — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Zombarrio Roleplay Logo">
+        <div>
+          <div class="brand-title" data-server-name>Zombarrio Roleplay</div>
+          <div class="brand-sub" data-server-tagline>FiveM Zombie Roleplay Server</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="rules.html">Rules</a>
+        <a href="join.html">Join</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-outline" data-discord href="#" target="_blank" rel="noopener">Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <div class="hero-grid">
+      <section class="card card-pad">
+        <span class="badge">🧟 Zombie Survival • 🎭 Serious RP • 🔥 Events</span>
+        <h1 class="h1">Survive the outbreak. Build your story.</h1>
+        <p class="p">
+          <b data-server-name>Zombarrio Roleplay</b> is a FiveM Zombie RP server where every decision matters —
+          loot, trade, form factions, and survive against the infected and the living.
+        </p>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap">
+          <a class="btn btn-primary" data-connect href="#" target="_blank" rel="noopener">Connect via CFX</a>
+          <button class="btn" data-copy-ip type="button">Copy Server IP</button>
+          <a class="btn" href="rules.html">Read Rules</a>
+        </div>
+
+        <div class="hr"></div>
+
+        <div class="kpis">
+          <div class="kpi"><b>Hardcore Survival</b><span>Loot scarcity + threat zones</span></div>
+          <div class="kpi"><b>Serious Roleplay</b><span>Immersion-first community</span></div>
+          <div class="kpi"><b>Active Staff</b><span>Tickets + fair enforcement</span></div>
+        </div>
+      </section>
+
+      <aside class="card card-pad">
+        <h2 style="margin:0 0 10px">Server Quick Info</h2>
+        <div class="feature">
+          <h3 style="margin:0 0 6px">Join Details</h3>
+          <p class="small" style="margin:0 0 8px">Server IP</p>
+          <div class="card" style="padding:12px;border-radius:16px;background:rgba(0,0,0,.22);border:1px solid var(--line)">
+            <code data-server-ip>connect your.server.ip:30120</code>
+          </div>
+          <div style="height:10px"></div>
+          <a class="btn btn-outline" data-connect href="#" target="_blank" rel="noopener">Open CFX Connect</a>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="feature">
+          <h3 style="margin:0 0 6px">What’s inside?</h3>
+          <p>Custom zombie AI, loot economy, safe zones, factions, permadeath options, and weekly events.</p>
+          <a class="btn" href="features.html" style="margin-top:10px">See Features</a>
+        </div>
+      </aside>
+    </div>
+
+    <div class="section-title">
+      <h2>Start your journey</h2>
+      <div class="muted">New players welcome</div>
+    </div>
+
+    <div class="grid3">
+      <div class="feature">
+        <h3>1) Verify in Discord</h3>
+        <p>Get the whitelist / rules / announcements and ask questions.</p>
+      </div>
+      <div class="feature">
+        <h3>2) Create your character</h3>
+        <p>Choose a background and goals. Your story drives your gameplay.</p>
+      </div>
+      <div class="feature">
+        <h3>3) Survive & roleplay</h3>
+        <p>Loot carefully, team up, and beware of betrayals.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> <span data-server-name>Zombarrio Roleplay</span>. All rights reserved.</div>
+      <div class="small">Not affiliated with Rockstar Games or FiveM.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

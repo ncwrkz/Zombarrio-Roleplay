@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zombarrio Roleplay — Support</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="assets/logo.png" alt="Zombarrio Roleplay Logo">
+        <div>
+          <div class="brand-title" data-server-name>Zombarrio Roleplay</div>
+          <div class="brand-sub" data-server-tagline>FiveM Zombie Roleplay Server</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="rules.html">Rules</a>
+        <a href="join.html">Join</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-outline" data-discord href="#" target="_blank" rel="noopener">Discord</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <section class="card card-pad">
+      <h1 class="h1" style="font-size:38px">Support</h1>
+      <p class="p">Submit a ticket (demo). It saves locally in your browser.</p>
+
+      <form id="ticketForm" class="card" style="padding:14px;border-radius:18px;background:rgba(0,0,0,.22);border:1px solid var(--line)">
+        <div class="form-row">
+          <div>
+            <label class="small">Player Name *</label>
+            <input id="playerName" class="input" placeholder="e.g. Kyle" required />
+          </div>
+          <div>
+            <label class="small">Discord Tag</label>
+            <input id="discordTag" class="input" placeholder="e.g. kyle#0001" />
+          </div>
+        </div>
+
+        <div style="height:10px"></div>
+
+        <div class="form-row">
+          <div>
+            <label class="small">Category</label>
+            <select id="category" class="input">
+              <option>Bug Report</option>
+              <option>Player Report</option>
+              <option>Ban Appeal</option>
+              <option>Whitelist</option>
+              <option>Purchase Issue</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div></div>
+        </div>
+
+        <div style="height:10px"></div>
+
+        <div>
+          <label class="small">Message *</label>
+          <textarea id="message" class="input" placeholder="Explain the issue..." required></textarea>
+        </div>
+
+        <div style="height:10px; display:flex; gap:10px; flex-wrap:wrap">
+          <button class="btn btn-primary" type="submit">Submit Ticket</button>
+          <button class="btn" type="button" id="clearTickets">Clear All (Local)</button>
+        </div>
+      </form>
+
+      <div class="spacer"></div>
+      <h2 style="margin:0 0 10px">Tickets (Local)</h2>
+      <div id="ticketList"></div>
+    </section>
+
+    <footer class="footer">
+      <div class="small">For real support, connect this to Discord webhooks or a backend database.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
